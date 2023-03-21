@@ -15,7 +15,6 @@
   padding: 100px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   background: #111;
   color: #87CEEB;
   z-index: 2;
@@ -101,6 +100,7 @@ img {
   .text {
   position: relative;
   z-index: 10;
+  width: 100%;
   }
 
   .text h2 {
@@ -439,21 +439,6 @@ img {
 
 /* Footer links */
 
-.footer-distributed .footer-left {
-  width: 30%;
-}
-
-.footer-distributed h3 {
-  color: #ffffff;
-  font: normal 36px 'Cookie', cursive;
-  margin: 0;
-}
-
-
-.footer-distributed h3 span {
-  color: #87CEEB;
-}
-
 footer {
   position: fixed;
   bottom: 0;
@@ -467,6 +452,7 @@ footer {
   font: bold 16px sans-serif;
   padding: 50px 50px 60px 50px;
   margin-top: 80px;
+  align-content: space-between;
 }
 
 .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
@@ -477,7 +463,8 @@ footer {
 /* Footer left */
 
 .footer-distributed .footer-left {
-  width: 30%;
+  width: 70%;
+  
 }
 
 .footer-distributed h3 {
@@ -513,12 +500,12 @@ footer {
 }
 
 /* Footer Center */
-.footer-center{
-  left: 10;
+.footer-center{ 
+
+  
 }
 .footer-distributed .footer-center {
-  position: absolute;
-  left: 999px;
+  left: 400px;
 }
 
 .footer-distributed .footer-center i {
@@ -626,9 +613,9 @@ footer {
     position: fixed;
     z-index: 999;
     border-radius: 100%;
-    bottom: 10px;
-    right: 15px;
-    padding: 25px;
+    bottom: 5px;
+    right: 7px;
+    padding: 10px;
     transition: ease 0.3s;
     animation: efecto 1.2s infinite;
 }
